@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <form asp-controller="Home" asp-action="GoSelenium">
+        <input name="TaiKhoan" type="text" placeholder="Nhập tài khoản test"/>
+        <input name="MatKhau" type="password" placeholder="Nhập mật khẩu test">
+        <input type="submit" class="btn-danger" value="Go Selenium"/>
+    </form>
+</div>
+<h1>Kết quả: @ViewBag.Data</h1>
+<a>Open SCreenshot's Folder with path: C:\Users\ADMIN\AppData\Roaming</a>
